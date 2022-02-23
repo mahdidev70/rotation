@@ -3,8 +3,6 @@
 $string1 = 'abcdefg';
 $string2 = 'defgabc';
 
-
-
 // compare length of two string
 if (strlen($string1) != strlen($string2)) {
 	echo ('not rotated');
@@ -30,9 +28,8 @@ if ($binaryCount1 != $binaryCount2) {
 	return;
 }
 
-
 $string1 .= $string1;
-// find startPosition to search
+// find startPosition to increase search performance
 $startPosition = strpos($string1, substr($string2, 0, 1));
 if (strpos($string1, $string2, $startPosition)) {
 	echo ('its rotated');
