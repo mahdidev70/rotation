@@ -41,4 +41,4 @@ if (strpos($string1, $string2, $startPosition)) {
 	echo ('not rotated');
 	return;
 }
-echo $startPosition;
+
